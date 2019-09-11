@@ -1,0 +1,23 @@
+import java.util.*;
+class TRAINSEATNO
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your coach");
+        String coach=sc.nextLine();
+        System.out.println("enter seat number ");
+        int sno=sc.nextInt();
+        int s=sno%8;
+        if(s==1 || s==4)
+        System.out.println("Seat no :"+sno+" Coach :"+coach+" Lower Berth");
+        else if(s==2 || s==5)
+        System.out.println("Seat no :"+sno+" Coach :"+coach+" Middle Berth");
+        else if(s==3 || s==6)
+        System.out.println("Seat no :"+sno+" Coach :"+coach+" Upper Berth");
+        else if(s==7)
+        System.out.println("Seat no :"+sno+" Coach :"+coach+" Side Lower Berth");
+        else if(s==0)
+        System.out.println("Seat no :"+sno+" Coach :"+coach+" Side Lower Berth");
+    }
+}
